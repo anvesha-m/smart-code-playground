@@ -7,8 +7,3 @@ function giveChallenge(){const _0x3a7d=document[_0x1a2b[1]](_0x1a2b[3]);const _0
 
 function copyCode(){const _0x3c9f=document[_0x1a2b[1]](_0x1a2b[2])[_0x1a2b[0]];navigator.clipboard.writeText(_0x3c9f),alert("Code copied!")}
 
-/*
-© 2026 Anvesha Mishra
-All Rights Reserved.
-Do not copy without permission
-*/
