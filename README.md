@@ -20,7 +20,7 @@
 ---
 
 ## Live Demo
-🌐 Try it here: [Live Link Placeholder](#)  
+🌐 Try it here: [https://smart-code-playground.vercel.app/]  
 
 ---
 
