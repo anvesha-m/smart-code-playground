@@ -101,3 +101,7 @@ pre {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+/* Reduce cursor height */
+.CodeMirror-cursor {
+  height: 14px !important;   /* 👈 adjust this */
+}
