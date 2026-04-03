@@ -97,3 +97,7 @@ pre {
 .CodeMirror pre {
   line-height: 1.2 !important;
 }
+.CodeMirror-lines {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
