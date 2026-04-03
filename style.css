@@ -106,5 +106,5 @@ pre {
   height: 20px !important; 
 }
 .CodeMirror pre {
-  line-height: 1.15 !important;  
+  line-height: .15 !important;  
 }
