@@ -1,94 +1,69 @@
 body {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color: #e2e8f0;
   font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
 }
 
-/* MAIN CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+.header {
+  text-align: center;
+  padding: 30px;
 }
 
-/* TITLE */
 h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #00ffff;
-  margin-bottom: 20px;
+  color: #4fc3f7;
 }
 
-/* EDITOR */
+.editor-box {
+  width: 80%;
+  margin: auto;
+  background: #0d1b22;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
 .CodeMirror {
-  height: 260px;
-  font-size: 15px;
-  border-radius: 12px;
-  border: 1px solid #1e293b;
+  height: 220px;
+  border-radius: 10px;
+  font-size: 14px;
 }
 
-/* BUTTONS */
-.btns {
-  text-align: center;
+.buttons {
   margin-top: 15px;
+  text-align: center;
 }
 
 button {
-  padding: 10px 16px;
-  margin: 6px;
+  padding: 10px 15px;
+  margin: 5px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background: #00ffff;
-  color: black;
-  font-weight: 600;
-  transition: 0.25s;
+  font-weight: bold;
 }
+
+.run { background: #22c55e; }
+.hint { background: #6366f1; color: white; }
+.copy { background: orange; }
+.explain { background: #e5e7eb; }
+.challenge { background: #9ca3af; }
 
 button:hover {
-  background: #22c55e;
-  transform: scale(1.05);
+  opacity: 0.8;
 }
 
-/* OUTPUT (BIG + IMPORTANT) */
-pre {
-  background: #020617;
-  padding: 18px;
-  border-radius: 12px;
-  min-height: 200px;
-  font-size: 15px;
-  border: 1px solid #00ffff;
-  overflow-x: auto;
-}
-
-/* CARDS */
-.section {
-  margin-top: 20px;
-}
-
-.section h2 {
-  color: #00ffff;
-  margin-bottom: 8px;
-}
-
-.card {
-  background: #1e293b;
+.output-box {
+  width: 80%;
+  margin: 20px auto;
+  background: #0d1b22;
   padding: 15px;
-  border-radius: 12px;
-  font-size: 15px;
-  line-height: 1.6;
+  border-radius: 10px;
 }
 
-/* QUIZ */
-#quiz button {
-  margin: 6px;
-}
-
-/* SCORE */
-#score {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 15px;
+pre {
+  background: #111;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 120px;
 }
