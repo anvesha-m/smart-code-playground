@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Smart Code Playground AI</title>
-
-  <link rel="stylesheet" href="style.css">
+  <title>Smart Code Playground</title>
 
   <!-- CodeMirror -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="container">
-  <h1>🤖 Smart Code Playground</h1>
+  <h1>💻 Smart Code Playground</h1>
 
   <textarea id="code"></textarea>
 
   <div class="btns">
     <button onclick="runCode()">▶ Run</button>
     <button onclick="analyzeCode()">🧠 Analyze</button>
+    <button onclick="loadChallenge()">🎯 Challenge</button>
     <button onclick="copyCode()">📋 Copy</button>
     <button onclick="downloadCode()">⬇ Download</button>
-    <button onclick="toggleTheme()">🌗 Theme</button>
   </div>
 
-  <h3>Output:</h3>
+  <h2>Output</h2>
   <pre id="output"></pre>
 
-  <h3>Analysis:</h3>
+  <h2>Explanation</h2>
   <p id="analysis"></p>
 
-  <h3>Suggestions:</h3>
+  <h2>Suggestions</h2>
   <p id="suggestions"></p>
 
-  <h3>Quiz:</h3>
+  <h2>Challenge</h2>
+  <p id="challenge"></p>
+
+  <h2>Quiz</h2>
   <div id="quiz"></div>
 
   <p id="score"></p>
