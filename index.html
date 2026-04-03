@@ -13,37 +13,60 @@
 
 <body>
 
-<div class="container">
-  <h1>💻 Smart Code Playground</h1>
+<header>
+  <h1>Smart Code Playground</h1>
+</header>
 
-  <textarea id="code"></textarea>
+<div class="main">
 
-  <div class="btns">
-    <button onclick="runCode()">▶ Run</button>
-    <button onclick="analyzeCode()">🧠 Analyze</button>
-    <button onclick="loadChallenge()">🎯 Challenge</button>
-    <button onclick="copyCode()">📋 Copy</button>
-    <button onclick="downloadCode()">⬇ Download</button>
+  <!-- LEFT: EDITOR -->
+  <div class="editor-section">
+    <textarea id="code"></textarea>
+
+    <div class="toolbar">
+      <button onclick="runCode()">Run</button>
+      <button onclick="analyzeCode()">Analyze</button>
+      <button onclick="loadChallenge()">Challenge</button>
+      <button onclick="copyCode()">Copy</button>
+    </div>
   </div>
 
-  <h2>Output</h2>
-  <pre id="output"></pre>
+  <!-- RIGHT: OUTPUT -->
+  <div class="output-section">
+    <h3>Output</h3>
+    <pre id="output"></pre>
+  </div>
 
-  <h2>Explanation</h2>
-  <p id="analysis"></p>
-
-  <h2>Suggestions</h2>
-  <p id="suggestions"></p>
-
-  <h2>Challenge</h2>
-  <p id="challenge"></p>
-
-  <h2>Quiz</h2>
-  <div id="quiz"></div>
-
-  <p id="score"></p>
 </div>
+
+<!-- BOTTOM INFO -->
+<div class="bottom">
+
+  <div class="card">
+    <h3>Explanation</h3>
+    <p id="analysis"></p>
+  </div>
+
+  <div class="card">
+    <h3>Suggestions</h3>
+    <p id="suggestions"></p>
+  </div>
+
+  <div class="card">
+    <h3>Challenge</h3>
+    <p id="challenge"></p>
+  </div>
+
+  <div class="card">
+    <h3>Quiz</h3>
+    <div id="quiz"></div>
+  </div>
+
+</div>
+
+<p class="score" id="score"></p>
 
 <script src="script.js"></script>
 </body>
 </html>
+
