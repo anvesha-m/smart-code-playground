@@ -1,95 +1,94 @@
 body {
   margin: 0;
-  background: #0d1117;
-  color: #c9d1d9;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 0;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e2e8f0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* HEADER */
-header {
-  padding: 15px 30px;
-  border-bottom: 1px solid #30363d;
+/* MAIN CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
+/* TITLE */
 h1 {
-  font-size: 22px;
-  margin: 0;
-}
-
-/* MAIN LAYOUT */
-.main {
-  display: flex;
-  height: 60vh;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 20px;
 }
 
 /* EDITOR */
-.editor-section {
-  width: 50%;
-  padding: 15px;
-  border-right: 1px solid #30363d;
-}
-
 .CodeMirror {
-  height: 80%;
-  font-size: 14px;
-  border-radius: 8px;
+  height: 260px;
+  font-size: 15px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
 }
 
-/* TOOLBAR */
-.toolbar {
-  margin-top: 10px;
+/* BUTTONS */
+.btns {
+  text-align: center;
+  margin-top: 15px;
 }
 
 button {
-  padding: 8px 14px;
-  margin-right: 8px;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 10px;
   border: none;
-  background: #238636;
-  color: white;
-  border-radius: 6px;
   cursor: pointer;
+  background: #00ffff;
+  color: black;
+  font-weight: 600;
+  transition: 0.25s;
 }
 
 button:hover {
-  background: #2ea043;
+  background: #22c55e;
+  transform: scale(1.05);
 }
 
-/* OUTPUT */
-.output-section {
-  width: 50%;
-  padding: 15px;
-}
-
+/* OUTPUT (BIG + IMPORTANT) */
 pre {
-  background: #161b22;
-  height: 85%;
-  padding: 15px;
-  border-radius: 8px;
-  overflow: auto;
-  font-size: 14px;
+  background: #020617;
+  padding: 18px;
+  border-radius: 12px;
+  min-height: 200px;
+  font-size: 15px;
+  border: 1px solid #00ffff;
+  overflow-x: auto;
 }
 
-/* BOTTOM SECTION */
-.bottom {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  padding: 15px;
+/* CARDS */
+.section {
+  margin-top: 20px;
+}
+
+.section h2 {
+  color: #00ffff;
+  margin-bottom: 8px;
 }
 
 .card {
-  background: #161b22;
+  background: #1e293b;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-.card h3 {
-  margin-top: 0;
+/* QUIZ */
+#quiz button {
+  margin: 6px;
 }
 
 /* SCORE */
-.score {
+#score {
   text-align: center;
-  padding: 10px;
-  font-size: 14px;
+  margin-top: 15px;
+  font-size: 15px;
 }
