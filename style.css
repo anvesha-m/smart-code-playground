@@ -34,6 +34,11 @@ p {
   height: 210px;
   font-size: 18px;   
   border-radius: 10px;
+  input {
+  font-size: 12px;
+  line-height: 14px;
+}
+
 }
 
 /* BUTTONS */
