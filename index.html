@@ -1,72 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Smart Code Playground</title>
+<div class="container">
+  <h1>💻 Smart Code Playground</h1>
 
-  <!-- CodeMirror -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+  <textarea id="code"></textarea>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-  <h1>Smart Code Playground</h1>
-</header>
-
-<div class="main">
-
-  <!-- LEFT: EDITOR -->
-  <div class="editor-section">
-    <textarea id="code"></textarea>
-
-    <div class="toolbar">
-      <button onclick="runCode()">Run</button>
-      <button onclick="analyzeCode()">Analyze</button>
-      <button onclick="loadChallenge()">Challenge</button>
-      <button onclick="copyCode()">Copy</button>
-    </div>
+  <div class="btns">
+    <button onclick="runCode()">▶ Run</button>
+    <button onclick="analyzeCode()">🧠 Analyze</button>
+    <button onclick="loadChallenge()">🎯 Challenge</button>
+    <button onclick="copyCode()">📋 Copy</button>
   </div>
 
-  <!-- RIGHT: OUTPUT -->
-  <div class="output-section">
-    <h3>Output</h3>
+  <div class="section">
+    <h2>Output</h2>
     <pre id="output"></pre>
   </div>
 
+  <div class="section">
+    <h2>Explanation</h2>
+    <div class="card" id="analysis"></div>
+  </div>
+
+  <div class="section">
+    <h2>Suggestions</h2>
+    <div class="card" id="suggestions"></div>
+  </div>
+
+  <div class="section">
+    <h2>Challenge</h2>
+    <div class="card" id="challenge"></div>
+  </div>
+
+  <div class="section">
+    <h2>Quiz</h2>
+    <div class="card" id="quiz"></div>
+  </div>
+
+  <p id="score"></p>
 </div>
-
-<!-- BOTTOM INFO -->
-<div class="bottom">
-
-  <div class="card">
-    <h3>Explanation</h3>
-    <p id="analysis"></p>
-  </div>
-
-  <div class="card">
-    <h3>Suggestions</h3>
-    <p id="suggestions"></p>
-  </div>
-
-  <div class="card">
-    <h3>Challenge</h3>
-    <p id="challenge"></p>
-  </div>
-
-  <div class="card">
-    <h3>Quiz</h3>
-    <div id="quiz"></div>
-  </div>
-
-</div>
-
-<p class="score" id="score"></p>
-
-<script src="script.js"></script>
-</body>
-</html>
-
