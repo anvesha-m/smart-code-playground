@@ -105,3 +105,6 @@ pre {
 .CodeMirror-cursor {
   height: 20px !important; 
 }
+.CodeMirror pre {
+  line-height: 1.15 !important;  
+}
