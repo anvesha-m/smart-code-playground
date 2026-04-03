@@ -103,5 +103,5 @@ pre {
 }
 /* Reduce cursor height */
 .CodeMirror-cursor {
-  height: 14px !important;   /* 👈 adjust this */
+  height: 18px !important; 
 }
