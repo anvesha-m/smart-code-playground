@@ -1,68 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Smart Code Playground</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Code Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
 
-  <!-- CodeMirror -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
-
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="header">
-  <h1>💻 Smart Code Playground</h1>
-  <p>Write, Run & Learn with Intelligent AI Hints</p>
-</div>
+<header>
+    <h1>💻 Smart Code Playground</h1>
+    <p>Write, Run & Learn with Intelligent AI Hints</p>
+</header>
 
-<div class="editor-box">
-  <textarea id="code">
+<div class="container">
+
+    <div class="editor">
+        <pre class="editor-box">
+<code id="code" contenteditable="true" class="language-javascript">
 // Write your JavaScript code here
 console.log("Hello World");
-  </textarea>
+</code>
+</pre>
 
-  <div class="buttons">
-    <button onclick="runCode()" class="run">▶ Run Code</button>
-    <button onclick="getHint()" class="hint">💡 Get Hint</button>
-    <button onclick="copyCode()" class="copy">📋 Copy Code</button>
-    <button onclick="explainCode()" class="explain">🧠 Explain Code</button>
-    <button onclick="loadChallenge()" class="challenge">🎮 Challenge</button>
-  </div>
+        <div class="buttons">
+
+            <button class="run" onclick="runCode()">▶ Run Code</button>
+            <button class="hint" onclick="getHint()">💡 Get Hint</button>
+            <button class="copy-btn" onclick="copyCode()">📋 Copy Code</button>
+            <button onclick="explainCode()">🧠 Explain Code</button>
+            <button onclick="giveChallenge()">🎮 Challenge</button>
+        </div>
+    </div>
+
+    <div class="output" id="output">
+        Output will appear here...
+    </div>
+
 </div>
 
-<div class="output-box">
-  <h3>Output</h3>
-  <pre id="output">Output will appear here...</pre>
-</div>
-
-<div class="output-box">
-  <h3>AI Explanation</h3>
-  <pre id="explanation"></pre>
-</div>
-
-<div class="output-box">
-  <h3>Hints & Suggestions</h3>
-  <pre id="hints"></pre>
-</div>
-
-<div class="output-box">
-  <h3>Challenge</h3>
-  <pre id="challengeText"></pre>
-</div>
+<footer class="footer">
+    Made by <strong>Anvesha Mishra</strong> 🚀 |
+    <a href="https://www.linkedin.com/in/anvesha-mishra07/" target="_blank">LinkedIn Profile</a>
+</footer>
 
 <script src="script.js"></script>
- 
 
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
 </body>
-   <footer class="footer">
-  <p>
-    Built by <span class="name">Anvesha Mishra</span> • 
-    <a href="www.linkedin.com/in/anvesha-mishra07" target="_blank">
-      Connect on LinkedIn
-    </a>
-  </p>
-     </footer>
 </html>
